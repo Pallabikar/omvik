@@ -52,8 +52,6 @@ export default function Hero() {
         <source src="/videos/OMVIK REEL INTRO .mp4" type="video/mp4" />
       </motion.video>
 
-     
-
       {/* 🌫️ OVERLAY - Subtler on mobile */}
       <motion.div
         className="absolute inset-0 bg-white/10 z-20"
@@ -85,85 +83,85 @@ export default function Hero() {
       <div className="relative z-30 w-full max-w-6xl mx-auto px-6 text-center flex flex-col items-center 
       pt-32 sm:pt-40 md:pt-48 lg:pt-56">
 
-        {/* 🔥 HEADING */}
+        {/* 🔥 HEADING — FIXED: mt-20 → mt-40 on mobile only to clear the logo animation */}
         <motion.h1
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className="mt-20 sm:mt-28 md:mt-36 lg:mt-44 xl:mt-52
+          className="mt-40 sm:mt-28 md:mt-36 lg:mt-44 xl:mt-52
           font-clagio text-black leading-tight tracking-[0.015em]
           font-light text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl drop-shadow-lg"
         >
-          Where Odisha’s Legacy <br />
+          Where Odisha's Legacy <br />
           Shapes Tomorrow.
         </motion.h1>
 
         {/* BUTTONS */}
-<div className="relative mt-12">
+        <div className="relative mt-12">
 
-  {/* 🔥 BACKGROUND GLOW */}
-  <motion.div
-    animate={{
-      opacity:
-        hoverState === "consult"
-          ? 1
-          : hoverState === "none"
-          ? 0
-          : 1,
-      scale:
-        hoverState === "consult"
-          ? 1.2
-          : 1,
-    }}
-    transition={{ duration: 0.4 }}
-    className={`absolute inset-0 blur-3xl rounded-full transition-all duration-500
-    ${
-      hoverState === "consult"
-        ? "bg-gradient-to-r from-orange-400 via-orange-500 to-red-500"
-        : hoverState === "none"
-        ? ""
-        : "bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-700"
-    }`}
-  />
+          {/* 🔥 BACKGROUND GLOW */}
+          <motion.div
+            animate={{
+              opacity:
+                hoverState === "consult"
+                  ? 1
+                  : hoverState === "none"
+                  ? 0
+                  : 1,
+              scale:
+                hoverState === "consult"
+                  ? 1.2
+                  : 1,
+            }}
+            transition={{ duration: 0.4 }}
+            className={`absolute inset-0 blur-3xl rounded-full transition-all duration-500
+            ${
+              hoverState === "consult"
+                ? "bg-gradient-to-r from-orange-400 via-orange-500 to-red-500"
+                : hoverState === "none"
+                ? ""
+                : "bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-700"
+            }`}
+          />
 
-  <motion.div
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.9 }}
-    className="relative flex flex-col sm:flex-row items-center justify-center gap-6"
-  >
-    {/* ORANGE BUTTON */}
-    <Link href="/services" className="w-full sm:w-auto">
-      <motion.button
-        onMouseEnter={() => setHoverState('blue')}
-        onMouseLeave={() => setHoverState('none')}
-        whileHover={{ scale: 1.08 }}
-        whileTap={{ scale: 0.96 }}
-        className="w-full sm:w-auto px-10 py-3 rounded-full bg-[#fc4d00] text-white uppercase tracking-[0.2em] text-xs"
-      >
-        Discover Projects
-      </motion.button>
-    </Link>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9 }}
+            className="relative flex flex-col sm:flex-row items-center justify-center gap-6"
+          >
+            {/* ORANGE BUTTON */}
+            <Link href="/services" className="w-full sm:w-auto">
+              <motion.button
+                onMouseEnter={() => setHoverState('blue')}
+                onMouseLeave={() => setHoverState('none')}
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.96 }}
+                className="w-full sm:w-auto px-10 py-3 rounded-full bg-[#fc4d00] text-white uppercase tracking-[0.2em] text-xs"
+              >
+                Discover Projects
+              </motion.button>
+            </Link>
 
-    {/* BLUE BUTTON */}
-    <Link href="/services" className="w-full sm:w-auto">
-      <motion.button
-        onMouseEnter={() => setHoverState('consult')}
-        onMouseLeave={() => setHoverState('none')}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.96 }}
-        className={`w-full sm:w-auto px-10 py-3 rounded-full uppercase tracking-[0.2em] text-xs transition-all duration-300
-        ${
-          hoverState === 'consult'
-            ? 'bg-gradient-to-r from-blue-600 via-indigo-500 to-blue-700 text-white shadow-md'
-            : 'bg-white/90 backdrop-blur-md text-black border border-white/40'
-        }`}
-      >
-        Consult Our Experts
-      </motion.button>
-    </Link>
-  </motion.div>
-</div>
+            {/* BLUE BUTTON */}
+            <Link href="/services" className="w-full sm:w-auto">
+              <motion.button
+                onMouseEnter={() => setHoverState('consult')}
+                onMouseLeave={() => setHoverState('none')}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.96 }}
+                className={`w-full sm:w-auto px-10 py-3 rounded-full uppercase tracking-[0.2em] text-xs transition-all duration-300
+                ${
+                  hoverState === 'consult'
+                    ? 'bg-gradient-to-r from-blue-600 via-indigo-500 to-blue-700 text-white shadow-md'
+                    : 'bg-white/90 backdrop-blur-md text-black border border-white/40'
+                }`}
+              >
+                Consult Our Experts
+              </motion.button>
+            </Link>
+          </motion.div>
+        </div>
 
         {/* HERITAGE */}
         <motion.div
@@ -175,8 +173,6 @@ export default function Hero() {
           <HeritageBanner />
         </motion.div>
       </div>
-
-
 
       {/* MODAL */}
       <ConsultationModal isOpen={showModal} onClose={() => setShowModal(false)} />
