@@ -56,28 +56,31 @@ export default function AboutOverview() {
     return (
         <section className="relative w-full py-20 sm:py-24 md:py-28 overflow-hidden bg-[#FDFCFB]">
 
-            {/* 🔥 ROTATING KONARK CHAKRA */}
-            {!isMobile && (
-                <motion.div
-                    className="absolute inset-0 flex items-center justify-center pointer-events-none"
-                    animate={{ rotate: 360 }}
-                    transition={{
-                        repeat: Infinity,
-                        duration: 60, // slow premium rotation
-                        ease: "linear",
+            {/* 🔥 ROTATING KONARK CHAKRA — always rendered, size/opacity adjusted for mobile */}
+            <motion.div
+                className="absolute inset-0 flex items-center justify-center pointer-events-none"
+                animate={{ rotate: 360 }}
+                transition={{
+                    repeat: Infinity,
+                    duration: 60, // slow premium rotation
+                    ease: "linear",
+                }}
+            >
+                <div
+                    className="relative opacity-10 blur-[1px]"
+                    style={{
+                        width: isMobile ? "280px" : undefined,
                     }}
                 >
-                    <div className="relative w-[300px] sm:w-[500px] md:w-[700px] opacity-10 blur-[1px]">
-                        <Image
-                            src="/images/konark-chakra.png"
-                            alt="Konark Chakra"
-                            width={700}
-                            height={700}
-                            className="object-contain"
-                        />
-                    </div>
-                </motion.div>
-            )}
+                    <Image
+                        src="/images/konark-chakra.png"
+                        alt="Konark Chakra"
+                        width={700}
+                        height={700}
+                        className={`object-contain ${isMobile ? "w-[280px]" : "w-[300px] sm:w-[500px] md:w-[700px]"}`}
+                    />
+                </div>
+            </motion.div>
 
             {/* SOFT GRADIENT OVERLAY */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#FC4D00]/10 via-transparent to-[#052870]/10 blur-3xl" />
