@@ -171,9 +171,10 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
                     onChange={(e) => setFormData({ ...formData, budgetRange: e.target.value })}
                   >
                     <option value="">Select budget</option>
-                    <option value="30L - 1Cr">30L - 1Cr</option>
-                    <option value="1Cr - 2Cr">1Cr - 2Cr</option>
-                    <option value="2Cr - 5Cr">2Cr - 5Cr</option>
+                    <option value="30L - 1Cr">20L - 50L</option>
+                    <option value="1Cr - 2Cr">50L - 1Cr</option>
+                    <option value="2Cr - 5Cr">1Cr - 2Cr</option>
+                    <option value="5Cr - 10Cr">2Cr - 5Cr</option>
                     <option value="5Cr - 10Cr">5Cr - 10Cr</option>
                     <option value="10Cr+">10Cr+</option>
                   </select>

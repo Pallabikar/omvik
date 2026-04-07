@@ -216,7 +216,7 @@ export default function ContactPage() {
               <div className="flex items-start mb-8">
                 <MapPin className="mr-4 text-[#fc4d00]" />
                 <div>
-                  <p className="font-medium">Old Town Office</p>
+                  <p className="font-medium">Jagamara Office</p>
                   <p className="text-sm text-black/70">
                     Plot no-B/32, Sidhivihar,<br />
                      New Jagamara Road,<br />

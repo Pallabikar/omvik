@@ -254,7 +254,7 @@ export default function AboutPage() {
       {/* TEAM */}
       <section className="pt-10 pb-20 sm:pb-24 px-6 max-w-6xl mx-auto">
       <h2 className="text-center text-2xl sm:text-3xl md:text-4xl mb-12 uppercase tracking-[0.2em] font-extrabold">
-  OUR TEAM
+  The People Behind the Promise.
 </h2>
 
 
@@ -265,79 +265,65 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
-      </section>
 
-      {/* TEAM MESSAGE */}
-<section className="py-24 max-w-5xl mx-auto px-6 text-center relative overflow-hidden">
 
-  {/* 🔥 MOVING LIGHT SWEEP */}
+
+
+
+{/* 🔥 TEAM’S MESSAGE – FLOATING ANTI-GRAVITY */}
+<section className="relative px-6 py-24 flex justify-center items-center overflow-hidden">
+
+  {/* 🌌 Ambient Glow Background */}
+  <div className="absolute inset-0 z-0 pointer-events-none">
+    <motion.div
+      className="absolute w-[400px] h-[400px] bg-[#fc4d00]/20 rounded-full blur-[120px]"
+      animate={{
+        x: [0, 80, -60, 0],
+        y: [0, -60, 50, 0],
+      }}
+      transition={{
+        duration: 14,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    />
+  </div>
+
+  {/* 💎 Floating Message Box */}
   <motion.div
-    initial={{ x: "-100%", opacity: 0 }}
-    whileInView={{ x: "100%", opacity: 0.12 }}
-    transition={{ duration: 2 }}
-    className="absolute inset-0 bg-gradient-to-r from-transparent via-[#fc4d00]/30 to-transparent blur-2xl"
-  />
-
-  {/* 🔥 FAUX 3D HEADING */}
-  <motion.h2
-    initial={{ opacity: 0, rotateX: 60, y: 80 }}
-    whileInView={{ opacity: 1, rotateX: 0, y: 0 }}
-    transition={{ duration: 1.2, ease: "easeOut" }}
-    style={{ perspective: 1000 }}
-    className="text-3xl sm:text-4xl mb-12 font-semibold tracking-wide"
-  >
-    TEAM'S MESSAGE
-  </motion.h2>
-
-  {/* 🔥 ISOMETRIC CARD */}
-  <motion.div
-    initial={{ opacity: 0, y: 80, rotateX: 20, rotateY: -10 }}
-    whileInView={{ opacity: 1, y: 0, rotateX: 0, rotateY: 0 }}
-    transition={{ duration: 1.2, ease: "easeOut" }}
-    whileHover={{
-      rotateX: -6,
-      rotateY: 6,
-      scale: 1.03,
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    animate={{
+      y: [0, -15, 10, -10, 0],     // floating up-down
+      x: [0, 10, -10, 5, 0],       // slight side movement
+      rotate: [0, 0.5, -0.5, 0],   // subtle tilt (premium feel)
     }}
-    style={{
-      transformStyle: "preserve-3d",
-      perspective: 1200,
+    transition={{
+      duration: 10,
+      repeat: Infinity,
+      ease: "easeInOut",
     }}
-    className="relative z-10 p-8 sm:p-12 rounded-[2rem] 
-               bg-white/60 backdrop-blur-xl 
-               border border-white/40 
-               shadow-[0_30px_80px_rgba(0,0,0,0.12)] 
-               transition-all duration-500"
+    viewport={{ once: true }}
+    className="relative z-10 max-w-3xl bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-xl border border-[#fc4d00]/30 shadow-2xl rounded-[28px] p-8 md:p-14 text-center"
   >
+    <h2 className="text-2xl md:text-3xl font-extrabold mb-6 tracking-wide">
+      TEAM’S MESSAGE
+    </h2>
 
-    {/* 🔥 INNER GLOW */}
-    <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-[#fc4d00]/10 via-transparent to-[#052870]/10 opacity-0 hover:opacity-100 transition duration-500 pointer-events-none" />
+    <p className="text-black/70 leading-relaxed mb-5">
+      At OMVIK, we are guided by a shared belief that real estate is about people, trust, and the journeys we become part of.
+      Every client becomes a part of our story, and every space reflects our collective commitment.
+    </p>
 
-    {/* CONTENT */}
-    <div className="relative z-10 space-y-6">
-
-      <motion.p
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        className="text-base sm:text-lg leading-relaxed text-black/80"
-      >
-        At OMVIK, we are guided by a shared belief that real estate is about people, trust, and the journeys we become part of. Every client becomes a part of our story, and every space reflects our collective commitment.
-      </motion.p>
-
-      <motion.p
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
-        className="text-base sm:text-lg leading-relaxed text-black/70"
-      >
-        As a team, we work with one purpose. To make your experience seamless, your investment secure, and your vision a reality. When you choose OMVIK, you choose a team that stands beside you at every step, building relationships that last for years to come.
-      </motion.p>
-
-    </div>
+    <p className="text-black/70 leading-relaxed">
+      As a team, we work with one purpose. To make your experience seamless, your investment secure, and your vision a reality.
+      When you choose OMVIK, you choose a team that stands beside you at every step, building relationships that last for years to come.
+    </p>
   </motion.div>
 </section>
-
-    </main>
+           
+ 
+      </section>
+</main>
   );
 }
