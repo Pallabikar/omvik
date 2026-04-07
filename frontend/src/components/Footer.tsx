@@ -44,7 +44,7 @@ export default function Footer() {
             </div>
 
             {/* Footer Links */}
-            <div className="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-10">
+            <div className="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-32 md:pb-10">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Brand & Mission */}

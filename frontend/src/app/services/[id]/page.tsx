@@ -55,6 +55,7 @@ export default function ServiceDetail({ params }: { params: Params }) {
                                 src={getImageSrc(id)}
                                 alt={`${id} Perspective`}
                                 fill
+                                sizes="(max-width: 768px) 100vw, 50vw"
                                 className="object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8 z-10">

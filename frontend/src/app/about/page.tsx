@@ -64,32 +64,32 @@ const teamMembers: TeamMember[] = [
   {
     name: "Bhabani Sankar Mohapatra",
     role: "Legal Consultant",
-    bio: "Guided by integrity and precision, Bhabani safeguards every transaction with security, ethics, and compliance.",
+    bio: "Believes that trust is the true foundation of every property journey.",
     img: "/images/member5.jpeg",
   },
   {
     name: "Er. Nirmal Mohapatra",
     role: "Chief Engineer",
-    bio: "Bringing over 10 years of engineering expertise, Nirmal delivers strength, precision, and reliability to every foundation.",
+    bio: "Sees every customer interaction as an opportunity to create a lasting relationship.",
     img: "/images/member4.jpeg",
   },
   
   {
     name: "Aparna Tripathy",
     role: "Managing Director",
-    bio: "A visionary leader with deep roots in Odishan culture, Aparna shapes OMVIK's mission around community and trust.",
+    bio: "Works with the vision that the right guidance changes the entire buying experience.",
     img: "/images/member1.jpeg",
   },
   {
     name: "Pratyush Kumar Rath",
     role: "Director of Strategy",
-    bio: "With a decade of experience in real estate strategy, Pratyush shapes OMVIK’s direction through insight, integrity, and transparent leadership.",
+    bio: "Values honesty, clarity, and commitment above everything in the journey.",
     img: "/images/member6.jpeg",
   },
   {
     name: "Biswajit Nayak",
     role: "Director of Operations",
-    bio: "With a strong command over operations, Biswajit ensures every project moves seamlessly from acquisition to completion.",
+    bio: "Measures success through customer happiness, not just numbers.",
     img: "/images/member3.jpeg",
   },
 ];
@@ -135,6 +135,7 @@ function TeamCard({ member, index, isMobile }: { member: TeamMember; index: numb
             src={member.img}
             alt={member.name}
             fill
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 320px"
             className="object-cover"
             style={{
               filter: hovered ? "none" : "grayscale(80%)",
@@ -256,20 +257,12 @@ export default function AboutPage() {
 </h2>
 
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12">
-
-          {teamMembers.slice(0, 3).map((member, i) => (
-            <TeamCard key={i} member={member} index={i} isMobile={isMobile} />
+        <div className="flex flex-wrap justify-center gap-8 sm:gap-10 md:gap-12">
+          {teamMembers.map((member, i) => (
+            <div key={i} className="w-full sm:w-[calc(50%-1.25rem)] md:w-[calc(33.333%-2rem)] max-w-[320px]">
+              <TeamCard member={member} index={i} isMobile={isMobile} />
+            </div>
           ))}
-
-          <div className="col-span-full flex justify-center gap-12 flex-wrap">
-            {teamMembers.slice(3).map((member, i) => (
-              <div key={i} className="w-full sm:w-[45%] md:w-[30%]">
-                <TeamCard member={member} index={i + 3} isMobile={isMobile} />
-              </div>
-            ))}
-          </div>
-
         </div>
       </section>
 

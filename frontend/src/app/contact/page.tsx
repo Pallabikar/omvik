@@ -74,7 +74,7 @@ export default function ContactPage() {
         <div className="absolute top-40 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#fc4d00]/10 blur-[120px] rounded-full" />
       )}
 
-      <div className="pt-24 sm:pt-32 md:pt-40 lg:pt-48 pb-20 sm:pb-24 px-6 max-w-7xl mx-auto relative z-10">
+      <div className="pt-24 sm:pt-32 md:pt-40 lg:pt-48 pb-40 sm:pb-32 lg:pb-24 px-6 max-w-7xl mx-auto relative z-10">
 
         {/* HERO */}
         <motion.h1
@@ -212,17 +212,18 @@ export default function ContactPage() {
 
 
 
-
-               {/* ADDRESS */}
+              {/* ADDRESS */}
               <div className="flex items-start mb-8">
                 <MapPin className="mr-4 text-[#fc4d00]" />
                 <div>
-                  <p className="font-medium">Jagamara Office</p>
+                  <p className="font-medium">Old Town Office</p>
                   <p className="text-sm text-black/70">
-                    Plot no-B/32, Sidhivihar, New Jagamara Road, Bhubaneswar, Odisha 751030
+                    Plot no-B/32, Sidhivihar,<br />
+                     New Jagamara Road,<br />
+                    Bhubaneswar, Odisha 751030
                   </p>
                   <a
-                    href="https://maps.google.com/?q=Plot no-1967, Sriram Nagar, Bhubaneswar"
+                    href="https://maps.app.goo.gl/emUEDwbkmVQ3mshz7"
                     target="_blank"
                     className="text-blue-600 text-sm"
                   >
@@ -230,6 +231,13 @@ export default function ContactPage() {
                   </a>
                 </div>
               </div>
+
+
+              
+
+
+
+              
 
               
 

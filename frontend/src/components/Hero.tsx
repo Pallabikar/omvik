@@ -133,7 +133,7 @@ export default function Hero() {
     className="relative flex flex-col sm:flex-row items-center justify-center gap-6"
   >
     {/* ORANGE BUTTON */}
-    <Link href="/contact" className="w-full sm:w-auto">
+    <Link href="/services" className="w-full sm:w-auto">
       <motion.button
         onMouseEnter={() => setHoverState('blue')}
         onMouseLeave={() => setHoverState('none')}

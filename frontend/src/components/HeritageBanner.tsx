@@ -42,6 +42,7 @@ export default function HeritageBanner() {
                         src="/images/culture/heritage_banner.png"
                         alt="Odisha Heritage"
                         fill
+                        sizes="100vw"
                         className="object-cover"
                         priority
                     />
@@ -53,6 +54,7 @@ export default function HeritageBanner() {
                         src="/images/culture/heritage_banner.png"
                         alt="Odisha Heritage"
                         fill
+                        sizes="100vw"
                         className="object-cover"
                         priority
                     />

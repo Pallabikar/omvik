@@ -8,7 +8,6 @@ export default function IntroLoader({ onFinish }: { onFinish: () => void }) {
   const [isMobile, setIsMobile] = useState(false);
   const [particles, setParticles] = useState<{top: number; left: number; duration: number; delay: number}[]>([]);
 
-  // Handle responsiveness and particles
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
@@ -36,7 +35,7 @@ export default function IntroLoader({ onFinish }: { onFinish: () => void }) {
     <AnimatePresence>
       {!isExiting && (
         <motion.div
-          className="fixed inset-0 w-screen h-screen z-[1200] flex items-center justify-center bg-black overflow-hidden"
+          className="fixed inset-0 w-screen h-screen z-[1200] flex items-center justify-center bg-[#FDFCFB] md:bg-black overflow-hidden"
           initial={{ opacity: 1 }}
           exit={{
             y: "-100%",
@@ -47,9 +46,9 @@ export default function IntroLoader({ onFinish }: { onFinish: () => void }) {
         >
           {/* VIDEO */}
           <motion.div
-            className="absolute inset-0 w-full h-full"
+            className="absolute inset-0 w-full h-full flex items-center justify-center"
             initial={{ scale: 1 }}
-            animate={{ scale: [1, 1.08, 1.05] }}
+            animate={{ scale: [1, 1.05, 1.02] }}
             transition={{ duration: 4, ease: "easeInOut", repeat: Infinity, repeatType: "mirror" }}
           >
             <motion.video
@@ -57,13 +56,11 @@ export default function IntroLoader({ onFinish }: { onFinish: () => void }) {
               muted
               playsInline
               onEnded={handleVideoEnd}
-              className="w-[100vw] h-[100vh] object-cover"
+              className="w-full h-full object-cover" // ✅ FIXED: was `object-contain md:object-cover`
             >
               <source src="/videos/OMVIK LINE ART .mp4" type="video/mp4" />
             </motion.video>
           </motion.div>
-
-         
 
           {/* SUBTLE CENTER GLOW */}
           <motion.div
@@ -71,7 +68,7 @@ export default function IntroLoader({ onFinish }: { onFinish: () => void }) {
             animate={{ opacity: [0.4, 0.6, 0.4], scale: [1, 1.02, 1] }}
             exit={{ opacity: 0 }}
             transition={{ duration: 4, repeat: Infinity, repeatType: "mirror" }}
-            className="absolute inset-0 bg-gradient-radial from-white/10 via-transparent to-transparent"
+            className="absolute inset-0 bg-gradient-radial from-black/5 via-transparent to-transparent md:from-white/10"
           />
 
           {/* FLOATING PARTICLES - Disabled on Mobile for performance */}
@@ -100,7 +97,7 @@ export default function IntroLoader({ onFinish }: { onFinish: () => void }) {
             animate={{ opacity: [0.6, 0.8, 0.6], y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ delay: 0.8, duration: 1.5, repeat: Infinity, repeatType: "mirror" }}
-            className="absolute bottom-16 text-white/60 text-xs tracking-[0.4em] uppercase"
+            className="absolute bottom-16 text-black/60 md:text-white/60 text-[10px] md:text-xs tracking-[0.4em] uppercase font-clagio"
           >
             Crafting Legacy
           </motion.div>

@@ -189,6 +189,7 @@ function Card({ service }: { service: typeof services[0] }) {
             src={`/images/services/${service.id}.png`}
             alt={service.title}
             fill
+            sizes="(max-width: 640px) 280px, 320px"
             className="object-cover scale-110 group-hover:scale-100 transition duration-[1600ms]"
           />
         </motion.div>
