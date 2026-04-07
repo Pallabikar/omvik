@@ -88,7 +88,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className="mt-45 sm:mt-28 md:mt-36 lg:mt-44 xl:mt-52
+          className="mt-48 sm:mt-28 md:mt-36 lg:mt-44 xl:mt-52
           font-clagio text-black leading-tight tracking-[0.015em]
           font-light text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl drop-shadow-lg"
         >
@@ -135,6 +135,8 @@ export default function Hero() {
               <motion.button
                 onMouseEnter={() => setHoverState('blue')}
                 onMouseLeave={() => setHoverState('none')}
+                onTouchStart={() => setHoverState('blue')}
+                onTouchEnd={() => setHoverState('none')}
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.96 }}
                 className="w-full sm:w-auto px-10 py-3 rounded-full bg-[#fc4d00] text-white uppercase tracking-[0.2em] text-xs"
@@ -148,6 +150,8 @@ export default function Hero() {
               <motion.button
                 onMouseEnter={() => setHoverState('consult')}
                 onMouseLeave={() => setHoverState('none')}
+                onTouchStart={() => setHoverState('consult')}
+                onTouchEnd={() => setHoverState('none')}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.96 }}
                 className={`w-full sm:w-auto px-10 py-3 rounded-full uppercase tracking-[0.2em] text-xs transition-all duration-300
