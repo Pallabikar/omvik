@@ -111,6 +111,8 @@ function TeamCard({ member, index, isMobile }: { member: TeamMember; index: numb
           style={{ aspectRatio: "3/4", borderRadius: "4px 28px 4px 28px" }}
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
+          onTouchStart={() => setHovered(true)}
+          onTouchEnd={() => setTimeout(() => setHovered(false), 600)}
         >
           <div
             className="absolute inset-0 z-10 transition-opacity duration-500"
@@ -181,17 +183,16 @@ export default function AboutPage() {
   return (
     <main className="bg-[#f9f6f1] text-[#1a1a1a]">
 
-      {!isMobile && (
-        <motion.div
-          className="fixed inset-0 flex items-center justify-center pointer-events-none z-0"
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 80, ease: "linear" }}
-        >
-          <div className="w-[600px] opacity-20">
-            <Image src="/images/konark-chakra.png" alt="chakra" width={900} height={900} />
-          </div>
-        </motion.div>
-      )}
+      {/* 🔥 ROTATING KONARK CHAKRA — always shown, size adjusted for mobile */}
+      <motion.div
+        className="fixed inset-0 flex items-center justify-center pointer-events-none z-0"
+        animate={{ rotate: 360 }}
+        transition={{ repeat: Infinity, duration: 80, ease: "linear" }}
+      >
+        <div className={`opacity-20 ${isMobile ? "w-[280px]" : "w-[600px]"}`}>
+          <Image src="/images/konark-chakra.png" alt="chakra" width={900} height={900} />
+        </div>
+      </motion.div>
 
       {/* 🔥 HERO */}
       <section className="py-20 sm:py-24 md:py-32 text-center relative z-10 overflow-hidden">
@@ -285,7 +286,7 @@ export default function AboutPage() {
     style={{ perspective: 1000 }}
     className="text-3xl sm:text-4xl mb-12 font-semibold tracking-wide"
   >
-    TEAM’S MESSAGE
+    TEAM'S MESSAGE
   </motion.h2>
 
   {/* 🔥 ISOMETRIC CARD */}
