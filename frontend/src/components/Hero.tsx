@@ -88,7 +88,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className="mt-40 sm:mt-28 md:mt-36 lg:mt-44 xl:mt-52
+          className="mt-45 sm:mt-28 md:mt-36 lg:mt-44 xl:mt-52
           font-clagio text-black leading-tight tracking-[0.015em]
           font-light text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl drop-shadow-lg"
         >
