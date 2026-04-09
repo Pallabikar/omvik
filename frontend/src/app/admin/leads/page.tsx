@@ -6,6 +6,7 @@ import { Loader2, Calendar, Phone, Mail, Search } from "lucide-react";
 import api from "@/utils/api";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface Lead {
     _id: string;
@@ -87,6 +88,14 @@ export default function AdminLeadsPage() {
             <div className="pt-24 sm:pt-32 md:pt-40 lg:pt-48 pb-20 sm:pb-24 px-6 max-w-7xl mx-auto relative z-10">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-6">
                     <div>
+                        <div className="flex items-center gap-6 mb-6 border-b border-black/5 pb-2">
+                            <Link href="/admin/leads" className="text-black font-clagio font-medium tracking-wider text-sm border-b-2 border-black pb-2 -mb-[3px]">
+                                GENERAL LEADS
+                            </Link>
+                            <Link href="/admin/properties" className="text-black/40 hover:text-black font-clagio font-medium tracking-wider text-sm transition-colors">
+                                PROPERTY REGISTRATIONS
+                            </Link>
+                        </div>
                         <motion.h1 
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}

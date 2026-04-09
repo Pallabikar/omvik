@@ -41,8 +41,8 @@ function Counter({
 export default function AboutOverview() {
     const [isMobile, setIsMobile] = useState(false);
     const stats = [
-        { value: 10, label: "Projects" },
-        { value: 850, label: "Happy Clients", highlight: true },
+        { value: 32, label: "Projects" },
+        { value: 860, label: "Happy Clients", highlight: true },
         { value: 4, label: "Years Experience" },
     ];
 

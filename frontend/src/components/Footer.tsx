@@ -17,20 +17,23 @@ export default function Footer() {
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.04)_0%,_transparent_70%)] pointer-events-none" />
 
                 <div className="relative z-10 max-w-4xl mx-auto">
+
+                    <h2 className="font-clagio font-medium text-white leading-[1.05] tracking-[0.03em] text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6">
+    Ready to Turn Your Land Into a Legacy With OMVIK?
+</h2>
                     
-                    <h2 className="font-clagio font-medium text-white leading-[1.05] tracking-[0.03em] text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6">
-                        Ready to Build Your<br />Legacy With OMVIK?
-                    </h2>
-                    <p className="text-white/50 font-light text-lg max-w-xl mx-auto mb-12 leading-relaxed">
-                        Discover premium plots and luxury living spaces crafted for prosperity, rooted in the heart of Odisha.
-                    </p>
+                    <p className="text-white/60 font-light text-base sm:text-lg max-w-2xl mx-auto mb-12 leading-relaxed text-center">
+    Have land to offer? Partner with OMVIK and unlock its true potential.<br />
+    We work closely with property owners to develop premium spaces that deliver value, security, and lasting impact.<br />
+    Register your property today and take the first step toward a rewarding partnership.
+</p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link 
-                            href="/services"
+                            href="/register-property"
                             prefetch={true}
                             className="w-full sm:w-auto px-10 py-4 rounded-full bg-white text-black font-clagio font-medium uppercase tracking-[0.25em] text-[11px] hover:bg-[#d8d2c7] transition-all duration-500 shadow-xl inline-block"
                         >
-                            Explore Portfolio
+                            Register your property
                         </Link>
                         <Link 
                             href="/contact"

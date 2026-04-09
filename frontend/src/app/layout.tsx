@@ -10,6 +10,7 @@ import SectionNavigation from "@/components/SectionNavigation";
 import ChakraBackground from "@/components/ChakraBackground";
 import { Toaster } from "react-hot-toast";
 import Navigation from "@/components/Navigation";
+import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 
 const inter = Inter({
@@ -69,6 +70,7 @@ export default function RootLayout({
           <PageTransition>
             {children}
           </PageTransition>
+          <Testimonials />
           <Footer />
           <WhatsAppWidget />
           <BackToTop />
