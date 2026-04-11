@@ -63,32 +63,32 @@ type TeamMember = {
 const teamMembers: TeamMember[] = [
   {
     name: "Bhabani Sankar Mohapatra",
-    role: "Legal Consultant",
+    role: "Director",
     bio: "Believes that trust is the true foundation of every property journey.",
     img: "/images/member5.jpeg",
   },
   {
     name: "Er. Nirmal Mohapatra",
-    role: "Chief Engineer",
+    role: "Director",
     bio: "Sees every customer interaction as an opportunity to create a lasting relationship.",
     img: "/images/member4.jpeg",
   },
   
   {
     name: "Aparna Tripathy",
-    role: "Managing Director",
+    role: "Director",
     bio: "Works with the vision that the right guidance changes the entire buying experience.",
     img: "/images/member1.jpeg",
   },
   {
     name: "Pratyush Kumar Rath",
-    role: "Director of Strategy",
+    role: "Director",
     bio: "Values honesty, clarity, and commitment above everything in the journey.",
     img: "/images/member6.jpeg",
   },
   {
     name: "Biswajit Nayak",
-    role: "Director of Operations",
+    role: "Director",
     bio: "Measures success through customer happiness, not just numbers.",
     img: "/images/member3.jpeg",
   },
@@ -150,12 +150,15 @@ function TeamCard({ member, index, isMobile }: { member: TeamMember; index: numb
           {!isMobile && hovered && <GoldParticles />}
         </div>
 
-        <div className="px-1 space-y-2">
+        <div className="px-1 space-y-2 text-center flex flex-col items-center">
           <h4 className="text-[#fc4d00] font-bold text-lg">{member.name}</h4>
+          <p className="text-xs font-bold tracking-[0.15em] text-black/70 uppercase">
+            {member.role}
+          </p>
 
           <motion.div
             animate={{ width: hovered ? 64 : 24 }}
-            className="h-[2px] bg-gradient-to-r from-[#fc4d00] to-transparent"
+            className="h-[2px] bg-[#fc4d00] opacity-30"
           />
 
           <p className="text-xs text-black/60 leading-relaxed">

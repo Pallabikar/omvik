@@ -68,6 +68,24 @@ export default function Navigation() {
                     <Link href="/about" prefetch={true} className="zenith-link-hover hover:opacity-100 transition-opacity whitespace-nowrap">
                         About Us
                     </Link>
+
+                    {/* Ground Report Dropdown */}
+                    <div className="group relative">
+                        <span className="zenith-link-hover hover:opacity-100 transition-opacity whitespace-nowrap cursor-pointer">
+                            Ground Report
+                        </span>
+                        <div className="absolute top-[120%] left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div className="bg-[#1A1A1A] border-t-2 border-[#E86A2C] flex flex-col py-2 rounded-b min-w-[160px] shadow-2xl">
+                                <Link href="/ground-report/blogs" className="text-white hover:text-[#E86A2C] px-6 py-3 hover:bg-white/5 transition-colors whitespace-nowrap text-center text-xs tracking-widest font-clagio uppercase">
+                                    Blogs
+                                </Link>
+                                <Link href="/ground-report/news" className="text-white hover:text-[#E86A2C] px-6 py-3 hover:bg-white/5 transition-colors whitespace-nowrap text-center text-xs tracking-widest font-clagio uppercase">
+                                    News
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+
                     <Link href="/contact" prefetch={true} className="zenith-link-hover hover:opacity-100 transition-opacity whitespace-nowrap">
                         Contact
                     </Link>
@@ -107,6 +125,8 @@ export default function Navigation() {
                                 { name: "Home", href: "/" },
                                 { name: "Services", href: "/services" },
                                 { name: "About Us", href: "/about" },
+                                { name: "Blogs", href: "/ground-report/blogs" },
+                                { name: "News", href: "/ground-report/news" },
                                 { name: "Contact", href: "/contact" },
                                 { name: "Login", href: "/login" }
                             ].map((item, i) => (

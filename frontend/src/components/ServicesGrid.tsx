@@ -212,7 +212,7 @@ function Card({ service }: { service: typeof services[0] }) {
             translateX: useTransform(smoothX, [-100, 100], [-10, 10]),
             translateY: useTransform(smoothY, [-100, 100], [-10, 10]),
           }}
-          className="relative z-10 h-full flex flex-col justify-end p-8"
+          className="relative z-10 h-full flex flex-col justify-end items-center text-center p-8"
         >
           <motion.div
             whileHover={{ scale: 1.3, rotate: 8 }}

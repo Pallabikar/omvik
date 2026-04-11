@@ -69,7 +69,7 @@ function ProcessCard({ step, index, isMobile }: { step: typeof steps[0], index: 
       style={isMobile ? {} : { rotateX, rotateY }}
       onMouseMove={isMobile ? undefined : handleMove}
       onMouseLeave={isMobile ? undefined : handleLeave}
-      className="glass-panel p-8 sm:p-10 rounded-[2rem] sm:rounded-[2.5rem] relative group transition-all duration-700 border border-white/10 shadow-xl"
+      className="glass-panel p-8 sm:p-10 rounded-[2rem] sm:rounded-[2.5rem] relative group transition-all duration-700 border border-white/10 shadow-xl flex flex-col items-center text-center"
     >
 
       {/* FLOATING BACKGROUND GLOW */}

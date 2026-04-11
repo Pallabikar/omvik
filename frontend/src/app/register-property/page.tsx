@@ -4,7 +4,7 @@ import { useState, useRef } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import api from "../../utils/api";
 import { toast } from "react-hot-toast";
-import { UploadCloud, CheckCircle, User, Phone, Mail, MapPin, Maximize, DollarSign, FileText, Building2, Briefcase, Activity, Image as ImageIcon } from "lucide-react";
+import { UploadCloud, CheckCircle, User, Phone, Mail, MapPin, Maximize, IndianRupee, FileText, Building2, Briefcase, Activity, Image as ImageIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -155,7 +155,7 @@ export default function RegisterProperty() {
               >
                 {/* Section 1: Personal Info */}
                 <div className="space-y-6">
-                  <h3 className="text-lg font-clagio text-[#111] border-b border-black/5 pb-2">Personal Information</h3>
+                  <h3 className="text-lg font-clagio text-[#111] border-b border-black/5 pb-2 text-center">Personal Information</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="relative group">
                       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-black/40 group-focus-within:text-black transition-colors">
@@ -205,7 +205,7 @@ export default function RegisterProperty() {
 
                 {/* Section 2: Property Info */}
                 <div className="space-y-6">
-                  <h3 className="text-lg font-clagio text-[#111] border-b border-black/5 pb-2">Property Details</h3>
+                  <h3 className="text-lg font-clagio text-[#111] border-b border-black/5 pb-2 text-center">Property Details</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="relative group">
                       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-black/40 group-focus-within:text-black transition-colors">
@@ -217,10 +217,14 @@ export default function RegisterProperty() {
                         onChange={handleInputChange}
                         className="w-full bg-white border border-black/10 rounded-xl py-3.5 pl-12 pr-4 text-sm font-poppins text-black focus:outline-none focus:border-black/30 focus:ring-1 focus:ring-black/30 transition-all appearance-none cursor-pointer shadow-sm"
                       >
+                        <option value="Project">Project</option>
                         <option value="Plot">Plot</option>
-                        <option value="Agricultural Land">Agricultural Land</option>
-                        <option value="Residential">Residential</option>
-                        <option value="Commercial">Commercial</option>
+                        <option value="Agricultural land">Agricultural land</option>
+                        <option value="duplex">duplex</option>
+                        <option value="Simplex">Simplex</option>
+                        <option value="Flat">Flat</option>
+                        <option value="residential house">residential house</option>
+                        <option value="Commerce">Commerce</option>
                       </select>
                       <div className="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none text-black/40">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -277,11 +281,11 @@ export default function RegisterProperty() {
 
                 {/* Section 3: Selling Details */}
                 <div className="space-y-6">
-                  <h3 className="text-lg font-clagio text-[#111] border-b border-black/5 pb-2">Selling Requirements</h3>
+                   <h3 className="text-lg font-clagio text-[#111] border-b border-black/5 pb-2 text-center">Selling Requirements</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="relative group">
                       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-black/40 group-focus-within:text-black transition-colors">
-                        <DollarSign size={18} />
+                        <IndianRupee size={18} />
                       </div>
                       <input
                         type="text"
@@ -315,7 +319,7 @@ export default function RegisterProperty() {
 
                 {/* Section 4: Extra */}
                 <div className="space-y-6">
-                  <h3 className="text-lg font-clagio text-[#111] border-b border-black/5 pb-2">Additional Information</h3>
+                   <h3 className="text-lg font-clagio text-[#111] border-b border-black/5 pb-2 text-center">Additional Information</h3>
                   
                   <div className="relative group">
                     <div className="absolute top-4 left-0 pl-4 flex items-start pointer-events-none text-black/40 group-focus-within:text-black transition-colors">

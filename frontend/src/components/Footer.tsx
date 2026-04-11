@@ -62,14 +62,14 @@ export default function Footer() {
                                     className="object-contain mix-blend-multiply"
                                 />
                             </Link>
-                            <p className="font-clagio font-medium text-black/60 uppercase tracking-[0.2em] text-[10px]">
+                            <p className="font-clagio font-medium text-black/60 uppercase tracking-[0.2em] text-[10px] text-center">
                                 Custodians of Legacy.<br />Built for Generations.
                             </p>
                         </div>
 
                         <div className="space-y-4">
-                            <h4 className="text-black font-clagio font-medium uppercase tracking-[0.3em] text-[11px] leading-[1.1]">Follow Us</h4>
-                            <div className="flex space-x-3">
+                            <h4 className="text-black font-clagio font-medium uppercase tracking-[0.3em] text-[11px] leading-[1.1] text-center">Follow Us</h4>
+                            <div className="flex space-x-3 justify-center">
                                 <Link href="#" className="p-2.5 rounded-full border border-black/5 hover:bg-[#C5A059] hover:text-white transition-all duration-500 text-black/60 hover:-translate-y-1 hover:scale-110 shadow-sm hover:shadow-md">
                                     <Facebook size={16} />
                                 </Link>
@@ -83,7 +83,7 @@ export default function Footer() {
                         </div>
 
                         <div className="space-y-4 pt-4 border-t border-black/5">
-                            <h4 className="text-black font-clagio font-medium uppercase tracking-[0.3em] text-[11px] leading-[1.1]">Stay connected with OMVIK</h4>
+                            <h4 className="text-black font-clagio font-medium uppercase tracking-[0.3em] text-[11px] leading-[1.1] text-center">Stay connected with OMVIK</h4>
                             <form className="flex w-full max-w-sm" onSubmit={(e) => e.preventDefault()}>
                                 <input
                                     type="email"
@@ -103,7 +103,7 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="text-black font-clagio font-medium uppercase tracking-[0.3em] text-[11px] mb-8 leading-[1.1]">Navigation</h4>
+                        <h4 className="text-black font-clagio font-medium uppercase tracking-[0.3em] text-[11px] mb-8 leading-[1.1] text-center">Navigation</h4>
                         <ul className="space-y-4">
                             {[
                                 { name: "Our Offerings", href: "/services" },
@@ -123,7 +123,7 @@ export default function Footer() {
 
                     {/* Offerings */}
                     <div>
-                        <h4 className="text-black font-clagio font-medium uppercase tracking-[0.3em] text-[11px] mb-8 leading-[1.1]">Portfolio</h4>
+                        <h4 className="text-black font-clagio font-medium uppercase tracking-[0.3em] text-[11px] mb-8 leading-[1.1] text-center">Portfolio</h4>
                         <ul className="space-y-4">
                             {[
                                 { name: "Premium Plots", href: "/services/plots" },
@@ -143,7 +143,7 @@ export default function Footer() {
 
                     {/* Contact Info */}
                     <div className="space-y-8">
-                        <h4 className="text-black font-clagio font-medium uppercase tracking-[0.3em] text-[11px] mb-4 leading-[1.1]">Headquarters</h4>
+                        <h4 className="text-black font-clagio font-medium uppercase tracking-[0.3em] text-[11px] mb-4 leading-[1.1] text-center">Headquarters</h4>
 
                         <div className="flex items-start">
                             <MapPin size={18} className="text-black mr-4 shrink-0 mt-1" />
@@ -200,7 +200,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="pt-10 border-t border-black/5 flex flex-col md:flex-row justify-between items-center text-[11px] text-black/40 font-clagio uppercase tracking-[0.2em] space-y-6 md:space-y-0 text-center md:text-left">
+                <div className="pt-10 border-t border-black/5 flex flex-col md:flex-row justify-between items-center text-[11px] text-black/40 font-clagio uppercase tracking-[0.2em] space-y-6 md:space-y-0 text-center">
                     <p>© {currentYear} OMVIK Developers</p>
                     <div className="flex space-x-6">
                         <Link href="#" className="hover:text-black transition-colors">Privacy Policy</Link>
