@@ -154,6 +154,7 @@ export default function Testimonials() {
               <button
                 onClick={prevSlide}
                 aria-label="Previous"
+                suppressHydrationWarning
                 className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200"
                 style={{ border: "1px solid rgba(197,160,89,0.35)", color: "#C5A059", background: "transparent" }}
                 onMouseEnter={(e) => { const b = e.currentTarget as HTMLButtonElement; b.style.background = "#C5A059"; b.style.color = "#fff"; }}
@@ -168,6 +169,7 @@ export default function Testimonials() {
                     key={i}
                     onClick={() => goTo(i)}
                     aria-label={`Slide ${i + 1}`}
+                    suppressHydrationWarning
                     className="rounded-full transition-all duration-300"
                     style={{
                       height: 5,
@@ -184,6 +186,7 @@ export default function Testimonials() {
               <button
                 onClick={nextSlide}
                 aria-label="Next"
+                suppressHydrationWarning
                 className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200"
                 style={{ border: "1px solid rgba(197,160,89,0.35)", color: "#C5A059", background: "transparent" }}
                 onMouseEnter={(e) => { const b = e.currentTarget as HTMLButtonElement; b.style.background = "#C5A059"; b.style.color = "#fff"; }}

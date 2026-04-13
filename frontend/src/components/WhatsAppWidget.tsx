@@ -127,6 +127,7 @@ export default function WhatsAppWidget() {
         onClick={() => setIsOpen(!isOpen)}
         whileTap={{ scale: 0.9 }}
         whileHover={{ scale: 1.1 }}
+        suppressHydrationWarning
         className="relative w-16 h-16 rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.2)] overflow-hidden"
       >
         {/* Glow */}

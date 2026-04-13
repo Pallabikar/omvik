@@ -4,7 +4,7 @@ const Post = require('../models/Post');
 // @desc    Get all posts
 // @route   GET /api/posts
 // @access  Public
-const getPosts = asyncHandler(async (req, res) => {
+exports.getPosts = asyncHandler(async (req, res) => {
   const posts = await Post.find({}).sort({ createdAt: -1 });
   res.status(200).json(posts);
 });
@@ -12,7 +12,7 @@ const getPosts = asyncHandler(async (req, res) => {
 // @desc    Get a single post by ID
 // @route   GET /api/posts/:id
 // @access  Public
-const getPostById = asyncHandler(async (req, res) => {
+exports.getPostById = asyncHandler(async (req, res) => {
   const post = await Post.findById(req.params.id);
   if (!post) {
     res.status(404);
@@ -24,7 +24,7 @@ const getPostById = asyncHandler(async (req, res) => {
 // @desc    Create a new post
 // @route   POST /api/posts
 // @access  Private/Admin
-const createPost = asyncHandler(async (req, res) => {
+exports.createPost = asyncHandler(async (req, res) => {
   const { title, content, image } = req.body;
 
   if (!title || !content) {
@@ -44,7 +44,7 @@ const createPost = asyncHandler(async (req, res) => {
 // @desc    Update a post
 // @route   PUT /api/posts/:id
 // @access  Private/Admin
-const updatePost = asyncHandler(async (req, res) => {
+exports.updatePost = asyncHandler(async (req, res) => {
   const post = await Post.findById(req.params.id);
 
   if (!post) {
@@ -62,7 +62,7 @@ const updatePost = asyncHandler(async (req, res) => {
 // @desc    Delete a post
 // @route   DELETE /api/posts/:id
 // @access  Private/Admin
-const deletePost = asyncHandler(async (req, res) => {
+exports.deletePost = asyncHandler(async (req, res) => {
   const post = await Post.findById(req.params.id);
 
   if (!post) {
@@ -73,11 +73,3 @@ const deletePost = asyncHandler(async (req, res) => {
   await post.deleteOne();
   res.status(200).json({ id: req.params.id, message: 'Post deleted successfully' });
 });
-
-module.exports = {
-  getPosts,
-  getPostById,
-  createPost,
-  updatePost,
-  deletePost,
-};

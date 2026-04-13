@@ -1,15 +1,20 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Facebook, Instagram, Linkedin, Phone, MapPin } from "lucide-react";
 
 
 export default function Footer() {
-    const currentYear = new Date().getFullYear();
+    const [year, setYear] = useState(new Date().getFullYear());
+
+    useEffect(() => {
+        setYear(new Date().getFullYear());
+    }, []);
 
     return (
-        <footer className="relative w-full bg-[#FDFCFB] overflow-hidden border-t border-black/5">
+        <footer className="relative w-full bg-[#FDFCFB] overflow-hidden border-t border-black/5" suppressHydrationWarning>
 
             {/* Footer CTA Section */}
             <div className="w-full bg-[#0a1628] px-6 py-20 md:py-28 text-center relative overflow-hidden">
@@ -201,7 +206,7 @@ export default function Footer() {
                 </div>
 
                 <div className="pt-10 border-t border-black/5 flex flex-col md:flex-row justify-between items-center text-[11px] text-black/40 font-clagio uppercase tracking-[0.2em] space-y-6 md:space-y-0 text-center">
-                    <p>© {currentYear} OMVIK Developers</p>
+                    <p>© {year} OMVIK Developers</p>
                     <div className="flex space-x-6">
                         <Link href="#" className="hover:text-black transition-colors">Privacy Policy</Link>
                         <span className="opacity-20">|</span>

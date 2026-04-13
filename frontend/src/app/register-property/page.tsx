@@ -335,8 +335,7 @@ export default function RegisterProperty() {
                     />
                   </div>
 
-                  <div 
-                    onClick={() => fileInputRef.current?.click()}
+                  <label 
                     className="w-full border-2 border-dashed border-black/10 hover:border-black/30 bg-white/50 rounded-xl py-8 px-6 flex flex-col items-center justify-center cursor-pointer transition-all hover:bg-white text-center group"
                   >
                     <input 
@@ -357,7 +356,7 @@ export default function RegisterProperty() {
                         <p className="text-xs text-black/40 font-poppins">JPG, PNG or PDF (Max 5MB)</p>
                       </>
                     )}
-                  </div>
+                  </label>
                 </div>
 
                 <div className="pt-6">

@@ -164,6 +164,7 @@ export default function ContactPage() {
 
                   <motion.button
                     whileTap={{ scale: 0.95 }}
+                    type="submit"
                     disabled={status === "submitting"}
                     className="w-full py-4 rounded-xl bg-gradient-to-r from-[#fc4d00] to-[#052870] text-white uppercase"
                   >

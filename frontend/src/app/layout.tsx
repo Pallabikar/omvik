@@ -49,6 +49,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${playfair.variable} ${cinzel.variable} antialiased`}
+        suppressHydrationWarning
       >
         <Toaster 
           position="top-center" 
