@@ -6,44 +6,13 @@ const postSchema = mongoose.Schema(
       type: String,
       required: [true, 'Please add a title'],
     },
-    slug: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    type: {
-      type: String,
-      enum: ['blog', 'news'],
-      required: true,
-    },
-    category: {
-      type: String,
-      required: true,
-    },
-    thumbnail: {
-      type: String,
-      required: true, // Will store Cloudinary URL
-    },
-    excerpt: {
-      type: String,
-      required: true,
-    },
     content: {
       type: String,
-      required: true,
+      required: [true, 'Please add content'],
     },
-    publishDate: {
-      type: Date,
-      default: Date.now,
-    },
-    status: {
-      type: String,
-      enum: ['draft', 'published'],
-      default: 'draft',
-    },
-    isPopular: {
-      type: Boolean,
-      default: false,
+    image: {
+      type: String, // Will store Cloudinary URL
+      required: false,
     },
   },
   {

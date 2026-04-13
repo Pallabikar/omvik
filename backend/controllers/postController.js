@@ -1,45 +1,19 @@
 const asyncHandler = require('express-async-handler');
 const Post = require('../models/Post');
 
-// @desc    Get all published posts (with filtering)
+// @desc    Get all posts
 // @route   GET /api/posts
 // @access  Public
 const getPosts = asyncHandler(async (req, res) => {
-  const { type, category, filter, isPopular } = req.query;
-  
-  let query = { status: 'published' };
-  
-  if (type) query.type = type;
-  if (category) query.category = category;
-  if (isPopular) query.isPopular = isPopular === 'true';
-  
-  if (filter) {
-    const now = new Date();
-    if (filter === 'today') {
-      const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-      query.publishDate = { $gte: startOfToday };
-    } else if (filter === 'week') {
-      // 7 days ago
-      const startOfWeek = new Date();
-      startOfWeek.setDate(startOfWeek.getDate() - 7);
-      query.publishDate = { $gte: startOfWeek };
-    } else if (filter === 'month') {
-      // 30 days ago
-      const startOfMonth = new Date();
-      startOfMonth.setDate(startOfMonth.getDate() - 30);
-      query.publishDate = { $gte: startOfMonth };
-    }
-  }
-
-  const posts = await Post.find(query).sort({ publishDate: -1 });
+  const posts = await Post.find({}).sort({ createdAt: -1 });
   res.status(200).json(posts);
 });
 
-// @desc    Get a single post
-// @route   GET /api/posts/slug/:slug
+// @desc    Get a single post by ID
+// @route   GET /api/posts/:id
 // @access  Public
-const getPostBySlug = asyncHandler(async (req, res) => {
-  const post = await Post.findOne({ slug: req.params.slug, status: 'published' });
+const getPostById = asyncHandler(async (req, res) => {
+  const post = await Post.findById(req.params.id);
   if (!post) {
     res.status(404);
     throw new Error('Post not found');
@@ -51,7 +25,19 @@ const getPostBySlug = asyncHandler(async (req, res) => {
 // @route   POST /api/posts
 // @access  Private/Admin
 const createPost = asyncHandler(async (req, res) => {
-  const post = await Post.create(req.body);
+  const { title, content, image } = req.body;
+
+  if (!title || !content) {
+    res.status(400);
+    throw new Error('Please add a title and content');
+  }
+
+  const post = await Post.create({
+    title,
+    content,
+    image,
+  });
+
   res.status(201).json(post);
 });
 
@@ -60,6 +46,7 @@ const createPost = asyncHandler(async (req, res) => {
 // @access  Private/Admin
 const updatePost = asyncHandler(async (req, res) => {
   const post = await Post.findById(req.params.id);
+
   if (!post) {
     res.status(404);
     throw new Error('Post not found');
@@ -77,6 +64,7 @@ const updatePost = asyncHandler(async (req, res) => {
 // @access  Private/Admin
 const deletePost = asyncHandler(async (req, res) => {
   const post = await Post.findById(req.params.id);
+
   if (!post) {
     res.status(404);
     throw new Error('Post not found');
@@ -86,19 +74,10 @@ const deletePost = asyncHandler(async (req, res) => {
   res.status(200).json({ id: req.params.id, message: 'Post deleted successfully' });
 });
 
-// @desc    Get all posts for admin (including drafts)
-// @route   GET /api/posts/admin/all
-// @access  Private/Admin
-const getAdminPosts = asyncHandler(async (req, res) => {
-  const posts = await Post.find({}).sort({ createdAt: -1 });
-  res.status(200).json(posts);
-});
-
 module.exports = {
   getPosts,
-  getPostBySlug,
+  getPostById,
   createPost,
   updatePost,
   deletePost,
-  getAdminPosts
 };
