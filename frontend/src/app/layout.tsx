@@ -12,6 +12,7 @@ import { Toaster } from "react-hot-toast";
 import Navigation from "@/components/Navigation";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import WakeUpBackend from "@/components/WakeUpBackend";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -79,6 +80,7 @@ export default function RootLayout({
           <WhatsAppWidget />
           <BackToTop />
           <SectionNavigation />
+          <WakeUpBackend />
         </SmoothScroll>
       </body>
     </html>

@@ -78,7 +78,12 @@ export default function Footer() {
                                 <Link href="#" className="p-2.5 rounded-full border border-black/5 hover:bg-[#C5A059] hover:text-white transition-all duration-500 text-black/60 hover:-translate-y-1 hover:scale-110 shadow-sm hover:shadow-md">
                                     <Facebook size={16} />
                                 </Link>
-                                <Link href="#" className="p-2.5 rounded-full border border-black/5 hover:bg-[#C5A059] hover:text-white transition-all duration-500 text-black/60 hover:-translate-y-1 hover:scale-110 shadow-sm hover:shadow-md">
+                                <Link 
+                                    href="https://www.instagram.com/omvik_realcon?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-2.5 rounded-full border border-black/5 hover:bg-[#C5A059] hover:text-white transition-all duration-500 text-black/60 hover:-translate-y-1 hover:scale-110 shadow-sm hover:shadow-md"
+                                >
                                     <Instagram size={16} />
                                 </Link>
                                 <Link href="#" className="p-2.5 rounded-full border border-black/5 hover:bg-[#C5A059] hover:text-white transition-all duration-500 text-black/60 hover:-translate-y-1 hover:scale-110 shadow-sm hover:shadow-md">

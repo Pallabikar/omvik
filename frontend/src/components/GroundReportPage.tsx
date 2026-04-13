@@ -8,13 +8,11 @@ import api from "@/utils/api";
 interface Post {
   _id: string;
   title: string;
-  slug: string;
-  type: string;
+  content: string;
+  image: string;
   category: string;
-  thumbnail: string;
-  excerpt: string;
-  publishDate: string;
-  isPopular?: boolean;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export default function GroundReportPage({ type }: { type: 'blog' | 'news' }) {
@@ -107,10 +105,10 @@ export default function GroundReportPage({ type }: { type: 'blog' | 'news' }) {
                                     </h3>
                                     <div className="space-y-6">
                                         {popularPosts.map(post => (
-                                            <Link key={post._id} href={`/ground-report/${type === 'blog' ? 'blogs' : 'news'}/${post.slug}`} className="group flex gap-4 items-start">
+                                            <Link key={post._id} href={`/ground-report/${type === 'blog' ? 'blogs' : 'news'}/${post._id}`} className="group flex gap-4 items-start">
                                                 <div className="relative w-16 h-16 shrink-0 rounded-lg overflow-hidden border border-black/5">
                                                     <Image 
-                                                        src={post.thumbnail}
+                                                        src={post.image || 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'}
                                                         alt={post.title}
                                                         fill
                                                         className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -121,7 +119,7 @@ export default function GroundReportPage({ type }: { type: 'blog' | 'news' }) {
                                                     {post.title}
                                                   </h4>
                                                   <span className="text-[10px] text-black/40 font-semibold uppercase tracking-wider mt-1 block">
-                                                    {new Date(post.publishDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                                                    {new Date(post.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
                                                   </span>
                                                 </div>
                                             </Link>
@@ -158,7 +156,7 @@ export default function GroundReportPage({ type }: { type: 'blog' | 'news' }) {
                                     <article key={post._id} className="group flex flex-col h-full bg-white border border-black/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-1">
                                         <div className="relative aspect-video overflow-hidden">
                                             <Image 
-                                                src={post.thumbnail}
+                                                src={post.image || 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'}
                                                 alt={post.title}
                                                 fill
                                                 className="object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
@@ -175,15 +173,15 @@ export default function GroundReportPage({ type }: { type: 'blog' | 'news' }) {
                                         </div>
                                         <div className="p-8 flex flex-col items-center text-center flex-1">
                                             <div className="text-xs text-black/50 mb-4 font-bold tracking-widest uppercase">
-                                                {new Date(post.publishDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                                                {new Date(post.createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                                             </div>
                                             <h3 className={`text-xl font-bold mb-4 line-clamp-2 leading-snug transition-colors duration-300 ${textHoverClass}`}>
                                                 {post.title}
                                             </h3>
                                             <p className="text-black/60 text-sm line-clamp-3 mb-8 flex-1 leading-relaxed">
-                                                {post.excerpt}
+                                                {post.content.substring(0, 150)}...
                                             </p>
-                                            <Link href={`/ground-report/${type === 'blog' ? 'blogs' : 'news'}/${post.slug}`} className={`inline-block font-bold text-xs tracking-[0.2em] uppercase bg-black text-white px-8 py-4 rounded-xl text-center transition-all duration-300 ${bgHoverClass}`}>
+                                            <Link href={`/ground-report/${type === 'blog' ? 'blogs' : 'news'}/${post._id}`} className={`inline-block font-bold text-xs tracking-[0.2em] uppercase bg-black text-white px-8 py-4 rounded-xl text-center transition-all duration-300 ${bgHoverClass}`}>
                                                 Read More
                                             </Link>
                                         </div>

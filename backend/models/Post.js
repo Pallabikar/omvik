@@ -14,6 +14,10 @@ const postSchema = mongoose.Schema(
       type: String, // Will store Cloudinary URL
       required: false,
     },
+    category: {
+      type: String,
+      default: 'General',
+    },
   },
   {
     timestamps: true,

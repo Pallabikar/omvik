@@ -8,15 +8,13 @@ import api from "@/utils/api";
 interface Post {
   _id: string;
   title: string;
-  slug: string;
-  type: string;
-  category: string;
-  thumbnail: string;
   content: string;
-  publishDate: string;
+  image: string;
+  category: string;
+  createdAt: string;
 }
 
-export default function PostDetail({ slug, type }: { slug: string, type: 'blog' | 'news' }) {
+export default function PostDetail({ id, type }: { id: string, type: 'blog' | 'news' }) {
     const [post, setPost] = useState<Post | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
@@ -26,7 +24,7 @@ export default function PostDetail({ slug, type }: { slug: string, type: 'blog' 
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const res = await api.get(`/posts/slug/${slug}`);
+                const res = await api.get(`/posts/${id}`);
                 setPost(res.data);
             } catch (err) {
                 console.error(err);
@@ -36,7 +34,7 @@ export default function PostDetail({ slug, type }: { slug: string, type: 'blog' 
             }
         };
         fetchPost();
-    }, [slug]);
+    }, [id]);
 
     if (loading) {
         return (
@@ -86,7 +84,7 @@ export default function PostDetail({ slug, type }: { slug: string, type: 'blog' 
                             {post.category}
                         </span>
                         <span className="text-sm font-bold tracking-widest text-black/50 uppercase">
-                            {new Date(post.publishDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                            {new Date(post.createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                         </span>
                     </div>
 
@@ -96,7 +94,7 @@ export default function PostDetail({ slug, type }: { slug: string, type: 'blog' 
 
                     <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl mb-16 border border-black/5">
                         <Image 
-                            src={post.thumbnail}
+                            src={post.image || 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'}
                             alt={post.title}
                             fill
                             priority
