@@ -35,6 +35,9 @@ export const metadata: Metadata = {
   },
   description: "As custodians of legacy, OMVIK curates premium real estate in Odisha, blending heritage-inspired design with modern excellence.",
   keywords: ["OMVIK", "Odisha Real Estate", "Heritage Properties", "Luxury Apartments Bhubaneswar", "Bhubaneswar Plots", "Premium Townships Odisha"],
+  icons: {
+    icon: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1776057855/favicon_dy05ya.png",
+  },
 };
 
 export default function RootLayout({

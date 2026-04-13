@@ -65,32 +65,32 @@ const teamMembers: TeamMember[] = [
     name: "Bhabani Sankar Mohapatra",
     role: "Director",
     bio: "Believes that trust is the true foundation of every property journey.",
-    img: "/images/member5.jpeg",
+    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057853/member5_ogshsd.jpg",
   },
   {
     name: "Er. Nirmal Mohapatra",
     role: "Director",
     bio: "Sees every customer interaction as an opportunity to create a lasting relationship.",
-    img: "/images/member4.jpeg",
+    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057853/member4_l81uwb.jpg",
   },
   
   {
     name: "Aparna Tripathy",
     role: "Director",
     bio: "Works with the vision that the right guidance changes the entire buying experience.",
-    img: "/images/member1.jpeg",
+    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057853/member1_qbxkjd.jpg",
   },
   {
     name: "Pratyush Kumar Rath",
     role: "Director",
     bio: "Values honesty, clarity, and commitment above everything in the journey.",
-    img: "/images/member6.jpeg",
+    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057852/member6_ficuh8.jpg",
   },
   {
     name: "Biswajit Nayak",
     role: "Director",
     bio: "Measures success through customer happiness, not just numbers.",
-    img: "/images/member3.jpeg",
+    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057853/member3_rf91ob.jpg",
   },
 ];
 
@@ -193,7 +193,7 @@ export default function AboutPage() {
         transition={{ repeat: Infinity, duration: 80, ease: "linear" }}
       >
         <div className={`opacity-20 ${isMobile ? "w-[280px]" : "w-[600px]"}`}>
-          <Image src="/images/konark-chakra.png" alt="chakra" width={900} height={900} />
+          <Image src="https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057854/konark-chakra_syehj3.webp" alt="chakra" width={900} height={900} />
         </div>
       </motion.div>
 

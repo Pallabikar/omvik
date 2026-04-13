@@ -56,9 +56,8 @@ export default function IntroLoader({ onFinish }: { onFinish: () => void }) {
               muted
               playsInline
               onEnded={handleVideoEnd}
-              className="w-full h-full object-cover" // ✅ FIXED: was `object-contain md:object-cover`
             >
-              <source src="/videos/OMVIK LINE ART .mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dqlmblh5i/video/upload/q_auto/f_auto/v1776057858/OMVIK_LINE_ART_lwvyna.mp4" type="video/mp4" />
             </motion.video>
           </motion.div>
 

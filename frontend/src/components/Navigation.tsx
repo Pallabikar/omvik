@@ -37,7 +37,7 @@ export default function Navigation() {
                 <Link href="/" prefetch={true} aria-label="Home" className="flex items-center relative z-50 group">
                     <div className="flex flex-col">
                         <Image
-                            src="/images/nav-icon.png"
+                            src="https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057855/nav-icon_fpqwfh.png"
                             alt="OMVIK Logo"
                             width={140}
                             height={140}

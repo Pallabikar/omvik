@@ -26,6 +26,7 @@ const services = [
     icon: <Trees size={32} />,
     description: "Prime land for future growth.",
     href: "/services/plots",
+    image: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057856/plots_ujn7mm.png",
   },
   {
     id: "townships",
@@ -33,6 +34,7 @@ const services = [
     icon: <LayoutDashboard size={32} />,
     description: "Planned communities for modern living.",
     href: "/services/townships",
+    image: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057856/townships_ufym22.png",
   },
   {
     id: "apartments",
@@ -40,6 +42,7 @@ const services = [
     icon: <Building size={32} />,
     description: "Smart homes for urban lifestyles.",
     href: "/services/apartments",
+    image: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057857/apartments_xtegsa.png",
   },
   {
     id: "duplex",
@@ -47,6 +50,7 @@ const services = [
     icon: <Home size={32} />,
     description: "Spacious homes with private comfort.",
     href: "/services/duplex",
+    image: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057857/duplex_xqnvd3.png",
   },
   {
     id: "simplex",
@@ -54,6 +58,7 @@ const services = [
     icon: <MapPin size={32} />,
     description: "Elegant single-floor living.",
     href: "/services/simplex",
+    image: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057855/simplex_e4elq9.png",
   },
   {
     id: "commercial",
@@ -61,6 +66,7 @@ const services = [
     icon: <Briefcase size={32} />,
     description: "Spaces built for business success.",
     href: "/services/commercial",
+    image: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057856/commercial_fqiabs.png",
   },
 ];
 
@@ -186,7 +192,7 @@ function Card({ service }: { service: typeof services[0] }) {
           className="absolute inset-0"
         >
           <NextImage
-            src={`/images/services/${service.id}.png`}
+            src={service.image}
             alt={service.title}
             fill
             sizes="(max-width: 640px) 280px, 320px"

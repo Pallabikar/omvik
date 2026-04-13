@@ -22,6 +22,9 @@ app.use(cors());
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/contact', require('./routes/contactRoutes'));
+app.use('/api/properties', require('./routes/propertyRoutes'));
+app.use('/api/posts', require('./routes/postRoutes'));
+app.use('/api/upload', require('./routes/uploadRoutes'));
 
 app.get('/', (req, res) => {
   res.send('OMVIK API is running...');
