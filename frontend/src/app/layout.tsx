@@ -39,6 +39,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1776057855/favicon_dy05ya.png",
   },
+  other: {
+    "facebook-domain-verification": "457536vhdtkadrnfoekkddiuxd3e3i",
+  },
 };
 
 export default function RootLayout({
