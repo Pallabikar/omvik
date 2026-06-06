@@ -137,8 +137,9 @@ export default function Footer() {
                         <ul className="space-y-4">
                             {[
                                 { name: "Premium Plots", href: "/services/plots" },
-                                { name: "Luxury Apartments", href: "/services/apartments" },
-                                { name: "Townships", href: "/services/townships" },
+                                { name: "Farmhouses", href: "/services/farmhouse" },
+                                { name: "Luxury Apartments", href: "/services/apartment" },
+                                { name: "Townships", href: "/services/township" },
                                 { name: "Commercial Spaces", href: "/services/commercial" }
                             ].map((link) => (
                                 <li key={link.name}>

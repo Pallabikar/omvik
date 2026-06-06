@@ -155,6 +155,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
                   >
                     <option value="">Select interest</option>
                     <option value="Plots">Plots</option>
+                    <option value="Farmhouse">Farmhouse</option>
                     <option value="Townships">Townships</option>
                     <option value="Apartments">Apartments</option>
                     <option value="Duplex">Duplex</option>
