@@ -78,19 +78,19 @@ const teamMembers: TeamMember[] = [
     name: "Aparna Tripathy",
     role: "Director",
     bio: "Works with the vision that the right guidance changes the entire buying experience.",
-    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057853/member1_qbxkjd.jpg",
+    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780744162/Aparna_vvycgi.png",
   },
   {
     name: "Pratyush Kumar Rath",
     role: "Director",
     bio: "Values honesty, clarity, and commitment above everything in the journey.",
-    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057852/member6_ficuh8.jpg",
+    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780744164/Pratyush_pwzvdu.png",
   },
   {
     name: "Biswajit Nayak",
     role: "Director",
     bio: "Measures success through customer happiness, not just numbers.",
-    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057853/member3_rf91ob.jpg",
+    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780744164/Biswajit_muycut.png",
   },
 ];
 
