@@ -39,7 +39,7 @@ export default function HeritageBanner() {
             >
                 <div className="relative w-1/2 h-full">
                     <Image
-                        src="https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057855/heritage_banner_lniqqd.png"
+                        src="https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782715060/ODISHA_HERITAGE_urjyyb.png"
                         alt="Odisha Heritage"
                         fill
                         sizes="100vw"
@@ -51,7 +51,7 @@ export default function HeritageBanner() {
                 {/* Duplicate */}
                 <div className="relative w-1/2 h-full">
                     <Image
-                        src="https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057855/heritage_banner_lniqqd.png"
+                        src="https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782715060/ODISHA_HERITAGE_urjyyb.png"
                         alt="Odisha Heritage"
                         fill
                         sizes="100vw"

@@ -60,7 +60,7 @@ export default function Footer() {
                         <div className="space-y-4">
                             <Link href="/" className="inline-block">
                                 <Image
-                                    src="https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057854/OMVIK-LOGO_x6cstv.png"
+                                    src="https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782713858/OMVIK-01_gyx4ci.png"
                                     alt="OMVIK Logo"
                                     width={100}
                                     height={30}

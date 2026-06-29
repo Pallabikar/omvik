@@ -57,7 +57,7 @@ export default function IntroLoader({ onFinish }: { onFinish: () => void }) {
               playsInline
               onEnded={handleVideoEnd}
             >
-              <source src="https://res.cloudinary.com/dqlmblh5i/video/upload/q_auto/f_auto/v1776057858/OMVIK_LINE_ART_lwvyna.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dtmqv7oqq/video/upload/v1782711963/OMVIK_LINE_ART_cll3kn.mp4" type="video/mp4" />
             </motion.video>
           </motion.div>
 

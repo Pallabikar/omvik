@@ -65,7 +65,7 @@ const teamMembers: TeamMember[] = [
     name: "Bhabani Sankar Mohapatra",
     role: "Director",
     bio: "Believes that trust is the true foundation of every property journey.",
-    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057853/member5_ogshsd.jpg",
+    img: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782713465/Bhabani_Sankar_Mohapatra_cqlbft.jpg",
   },
   {
     name: "Er. Nirmal Mohapatra",
@@ -78,19 +78,19 @@ const teamMembers: TeamMember[] = [
     name: "Aparna Tripathy",
     role: "Director",
     bio: "Works with the vision that the right guidance changes the entire buying experience.",
-    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780744162/Aparna_vvycgi.png",
+    img: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782711962/Aparna_Tripathy_rnloqp.png",
   },
   {
     name: "Pratyush Kumar Rath",
     role: "Director",
     bio: "Values honesty, clarity, and commitment above everything in the journey.",
-    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780744164/Pratyush_pwzvdu.png",
+    img: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782711962/Pratyush_Kumar_Rath_w0misk.png",
   },
   {
     name: "Biswajit Nayak",
     role: "Director",
     bio: "Measures success through customer happiness, not just numbers.",
-    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780744164/Biswajit_muycut.png",
+    img: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782711962/Biswajit_Nayak_hlr7z0.png",
   },
 ];
 
