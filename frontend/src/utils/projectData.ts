@@ -47,7 +47,7 @@ export const duplexProject: ProjectData = {
 Created for families who value space, security, and a meaningful lifestyle, Shree Hari City presents premium duplex bungalows amidst a vibrant community enriched with modern amenities and spiritual charm. Every aspect of the township has been carefully envisioned to provide residents with a life of convenience, wellness, and belonging.
 
 More than a residential address, Shree Hari City is a place where cherished memories are created, generations grow together, and every day begins with the blessings and tranquility that only Puri can offer.`,
-  heroImage: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780308424/Top_View_Of_Landscape.jpg_co1taz.jpg",
+  heroImage: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782718967/Duplex_cd1fra.jpg",
   galleryImages: [
     "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780308173/South_Facing_Duplex.jpg_wi4vnw.jpg",
     "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780308173/Street_View.jpg_zi78x5.jpg",
@@ -93,7 +93,7 @@ export const apartmentProject: ProjectData = {
 Created for families who value thoughtfully designed spaces, robust security, and a life enriched with purpose, Shreehari Malini presents premium 1, 2, and 3 BHK apartments within a vibrant, self-sufficient community. From lush landscaped gardens and a dedicated children's play area to a modern gymnasium, community hall, and round-the-clock security — every amenity has been envisioned to nurture wellness, togetherness, and everyday joy.
 
 More than a residential address, Shreehari Malini is a place where cherished memories take root, where families grow stronger with every passing season, and where every morning begins with the quiet blessings and profound peace that only the sacred land of Puri can offer.`,
-  heroImage: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780377603/d85f2025-4f0e-44fd-a3a8-5818fba00312-0_kxasm2.jpg",
+  heroImage: "/images/services/apartments.png",
   galleryImages: [
     "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780377670/cca80345-1b50-4533-8278-09635385c23e-1_i3ir6s.jpg",
     "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780377737/a442be75-1f2d-4bb6-b138-f807970f8a7a-1_scvtcn.jpg",
@@ -142,9 +142,9 @@ Surrounded by expansive green spaces and planned with a future-forward vision, I
 More than a real estate development, Infogreen City is a destination where Odisha's rich heritage meets modern urban planning. Every element has been carefully crafted to create a secure, welcoming, and future-ready environment where families can grow, aspirations can flourish, and lasting memories can be built.
 
 Welcome to Infogreen City — where nature, community, and opportunity come together to create a life of purpose and possibility.`,
-    heroImage: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780033649/INFOGREEN-CITY_xnede4.png",
+    heroImage: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782557958/INFOGREEN-CITY_lf1bqf.png",
     galleryImages: [
-      "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780033649/INFOGREEN-CITY-2_dbtj5s.png",
+      "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782557957/INFOGREEN-CITY-2_ulo60a.png",
     ],
     details: [
       { label: "Township Category", value: "Eco-Smart Township" },
@@ -190,8 +190,10 @@ Surrounded by natural greenery and supported by developing infrastructure, Acre 
 
 More than just land, Acre Bhoomi 1 is an opportunity to be part of a region poised for growth and transformation. Here, every acre represents possibility, every investment holds potential, and every vision has the space to come to life.`,
     visionTitle: "",
-    heroImage: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780033649/ACRE_BHOOMI_1_stxnmz.jpg",
-    galleryImages: [],
+    heroImage: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782557956/ACRE_BHOOMI_1_wsair6.jpg",
+    galleryImages: [
+      "/images/services/acre_bhoomi_gallery_1.png"
+    ],
     details: [
       { label: "Development Type", value: "Gated Acre Community" },
       { label: "Plot Dimensions", value: "Minimum 1 Acre" },
@@ -236,8 +238,10 @@ More than just land, Acre Bhoomi 1 is an opportunity to be part of a region pois
 Nestled amidst peaceful surroundings and emerging infrastructure, *Acre Bhoomi Phase II* offers thoughtfully planned land parcels within a secure gated community. Designed for those who seek both investment potential and a place to build their future, the project combines strategic location advantages with the promise of appreciation, connectivity, and a better quality of life.
 
 More than an investment, Acre Bhoomi Phase II is an opportunity to own a part of tomorrow. It is a place where aspirations take shape, generations create lasting legacies, and every acre holds the promise of growth, security, and endless possibilities.`,
-    heroImage: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780033649/ACRE_BHOOMI_2_qsjozs.jpg",
-    galleryImages: [],
+    heroImage: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782557959/ACRE_BHOOMI_2_olckba.jpg",
+    galleryImages: [
+      "/images/services/acre_bhoomi_gallery_2.png"
+    ],
     details: [
       { label: "Development Type", value: "Gated Township Community" },
       { label: "Plot Sizes", value: "2000-15000 sq.Ft." },
@@ -281,7 +285,7 @@ More than an investment, Acre Bhoomi Phase II is an opportunity to own a part of
     contactNumber: "+91 7205522303",
     tagline: "Own a Piece of Earth. Build Your Eco-Retreat.",
     description: "Community Farmland offers an escape to a serene, organic agrarian community. Located on the green outskirt coordinates of Pipili, near the bypass path connecting Bhubaneswar and Puri, it gives city families a chance to own large farm parcels. Designed for weekend retreats, organic farming, and eco-sustainable holiday cabins, this managed farmland township features shared farming staff, organic orchards, and a rustic community clubhouse.",
-    heroImage: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780033648/FARMLAND_mvha6j.png",
+    heroImage: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782557957/FARMLAND_zfnbhb.png",
     galleryImages: [],
     details: [
       { label: "Farmland Category", value: "Managed Eco-Farmland" },
@@ -326,11 +330,11 @@ Thoughtfully designed as a premium second-home destination, Vasundhara combines 
 More than a farmhouse or an investment, Vasundhara is a return to a way of life many have longed for—a life where children grow up amidst open spaces, weekends are spent under endless skies, and families create memories rooted in nature. It is a place where wellness, sustainability, and belonging come together to create a legacy that can be cherished for generations.
 
 Welcome to Vasundhara —Where Nature Feels Like Home, and Every Day feels like a getaway.`,
-    heroImage: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782718966/Farmhouse_kypp7j.jpg",
     galleryImages: [
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=800&auto=format&fit=crop",
+      "/images/services/vasundhara_gallery_1.png",
+      "/images/services/vasundhara_gallery_2.png",
+      "/images/services/vasundhara_gallery_3.png",
     ],
     details: [
       { label: "Project Category", value: "Community living managed farmlands with cottage" },

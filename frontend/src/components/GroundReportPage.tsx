@@ -108,7 +108,7 @@ export default function GroundReportPage({ type }: { type: 'blog' | 'news' }) {
                                             <Link key={post._id} href={`/ground-report/${type === 'blog' ? 'blogs' : 'news'}/${post._id}`} className="group flex gap-4 items-start">
                                                 <div className="relative w-16 h-16 shrink-0 rounded-lg overflow-hidden border border-black/5">
                                                     <Image 
-                                                        src={post.image || 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'}
+                                                        src={post.image || 'https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782557955/TOWNSHIP_qf8nyk.jpg'}
                                                         alt={post.title}
                                                         fill
                                                         className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -156,7 +156,7 @@ export default function GroundReportPage({ type }: { type: 'blog' | 'news' }) {
                                     <article key={post._id} className="group flex flex-col h-full bg-white border border-black/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-1">
                                         <div className="relative aspect-video overflow-hidden">
                                             <Image 
-                                                src={post.image || 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'}
+                                                src={post.image || 'https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782557955/TOWNSHIP_qf8nyk.jpg'}
                                                 alt={post.title}
                                                 fill
                                                 className="object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"

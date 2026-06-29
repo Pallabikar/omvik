@@ -12,8 +12,13 @@ export default function ServiceDetail({ params }: { params: Params }) {
     const { id } = use(params);
 
     const getImageSrc = (serviceId: string) => {
-        if (serviceId === "townships") return "/images/services/townships.png";
-        return `/images/services/${serviceId}.png`;
+        const imageMap: Record<string, string> = {
+            "simplex": "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782719021/Simplex_nfrotp.jpg",
+            "plots": "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782719021/PLOT_oe0aaf.jpg",
+            "commercial": "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782718967/Commercial_d1fivx.jpg",
+            "townships": "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782557955/TOWNSHIP_qf8nyk.jpg"
+        };
+        return imageMap[serviceId.toLowerCase()] || `/images/services/${serviceId}.png`;
     };
 
     return (

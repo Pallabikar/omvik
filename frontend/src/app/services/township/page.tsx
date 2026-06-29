@@ -15,7 +15,7 @@ export default function TownshipServicePage() {
       <section className="relative w-full h-[50vh] sm:h-[60vh] overflow-hidden flex items-end">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://res.cloudinary.com/dqlmblh5i/image/upload/v1780033648/TOWNSHIP_launnf.jpg"
+            src="https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782557955/TOWNSHIP_qf8nyk.jpg"
             alt="Townships Banner"
             fill
             priority

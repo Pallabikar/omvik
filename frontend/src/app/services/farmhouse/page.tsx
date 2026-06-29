@@ -15,7 +15,7 @@ export default function FarmhouseServicePage() {
       <section className="relative w-full h-[50vh] sm:h-[60vh] overflow-hidden flex items-end">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop"
+            src="https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782718966/Farmhouse_kypp7j.jpg"
             alt="Farmhouses Banner"
             fill
             priority

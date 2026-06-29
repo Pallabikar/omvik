@@ -94,7 +94,7 @@ export default function PostDetail({ id, type }: { id: string, type: 'blog' | 'n
 
                     <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl mb-16 border border-black/5">
                         <Image 
-                            src={post.image || 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'}
+                            src={post.image || 'https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782557955/TOWNSHIP_qf8nyk.jpg'}
                             alt={post.title}
                             fill
                             priority

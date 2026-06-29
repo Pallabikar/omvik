@@ -26,7 +26,7 @@ const services = [
     icon: <Trees size={32} />,
     description: "Prime land for future growth.",
     href: "/services/plots",
-    image: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057856/plots_ujn7mm.png",
+    image: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782719021/PLOT_oe0aaf.jpg",
   },
   {
     id: "farmhouse",
@@ -34,7 +34,7 @@ const services = [
     icon: <Home size={32} />,
     description: "Serene country estates & managed farm plots.",
     href: "/services/farmhouse",
-    image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=600&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782718966/Farmhouse_kypp7j.jpg",
   },
   {
     id: "townships",
@@ -42,7 +42,7 @@ const services = [
     icon: <LayoutDashboard size={32} />,
     description: "Planned communities for modern living.",
     href: "/services/township",
-    image: "https://res.cloudinary.com/dqlmblh5i/image/upload/v1780033648/TOWNSHIP_launnf.jpg",
+    image: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782557955/TOWNSHIP_qf8nyk.jpg",
   },
   {
     id: "apartments",
@@ -50,7 +50,7 @@ const services = [
     icon: <Building size={32} />,
     description: "Smart homes for urban lifestyles.",
     href: "/services/apartment",
-    image: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057857/apartments_xtegsa.png",
+    image: "/images/services/apartments.png",
   },
   {
     id: "duplex",
@@ -58,7 +58,7 @@ const services = [
     icon: <Home size={32} />,
     description: "Spacious homes with private comfort.",
     href: "/services/duplex",
-    image: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057857/duplex_xqnvd3.png",
+    image: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782718967/Duplex_cd1fra.jpg",
   },
   {
     id: "simplex",
@@ -66,7 +66,7 @@ const services = [
     icon: <MapPin size={32} />,
     description: "Elegant single-floor living.",
     href: "/services/simplex",
-    image: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057855/simplex_e4elq9.png",
+    image: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782719021/Simplex_nfrotp.jpg",
   },
   {
     id: "commercial",
@@ -74,7 +74,7 @@ const services = [
     icon: <Briefcase size={32} />,
     description: "Spaces built for business success.",
     href: "/services/commercial",
-    image: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057856/commercial_fqiabs.png",
+    image: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782718967/Commercial_d1fivx.jpg",
   },
 ];
 

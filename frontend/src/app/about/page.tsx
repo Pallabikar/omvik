@@ -65,13 +65,13 @@ const teamMembers: TeamMember[] = [
     name: "Bhabani Sankar Mohapatra",
     role: "Director",
     bio: "Believes that trust is the true foundation of every property journey.",
-    img: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782713465/Bhabani_Sankar_Mohapatra_cqlbft.jpg",
+    img: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782718966/Bhabani_g3uwj7.jpg",
   },
   {
     name: "Er. Nirmal Mohapatra",
     role: "Director",
     bio: "Sees every customer interaction as an opportunity to create a lasting relationship.",
-    img: "https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057853/member4_l81uwb.jpg",
+    img: "https://res.cloudinary.com/dtmqv7oqq/image/upload/v1782718968/Nirmala_Sir_ptom2g.jpg",
   },
   
   {
