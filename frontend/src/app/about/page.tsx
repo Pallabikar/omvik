@@ -186,14 +186,21 @@ export default function AboutPage() {
   return (
     <main className="bg-[#f9f6f1] text-[#1a1a1a]">
 
-      {/* 🔥 ROTATING KONARK CHAKRA — always shown, size adjusted for mobile */}
+      {/* 🔥 ROTATING KONARK CHAKRA — background animation */}
       <motion.div
         className="fixed inset-0 flex items-center justify-center pointer-events-none z-0"
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 80, ease: "linear" }}
       >
-        <div className={`opacity-20 ${isMobile ? "w-[280px]" : "w-[600px]"}`}>
-          <Image src="https://res.cloudinary.com/dqlmblh5i/image/upload/q_auto/f_auto/v1776057854/konark-chakra_syehj3.webp" alt="chakra" width={900} height={900} />
+        <div className={`opacity-25 transition-all duration-500 ${isMobile ? "w-[300px]" : "w-[650px] lg:w-[750px]"}`}>
+          <Image
+            src="/images/konark-chakra.png"
+            alt="Rotating Konark Chakra"
+            width={900}
+            height={900}
+            priority
+            className="w-full h-auto object-contain drop-shadow-lg"
+          />
         </div>
       </motion.div>
 
