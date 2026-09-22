@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Instagram, Linkedin, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram, Phone, MapPin } from "lucide-react";
 
 
 export default function Footer() {
@@ -75,7 +75,12 @@ export default function Footer() {
                         <div className="space-y-4">
                             <h4 className="text-black font-clagio font-medium uppercase tracking-[0.3em] text-[11px] leading-[1.1] text-center">Follow Us</h4>
                             <div className="flex space-x-3 justify-center">
-                                <Link href="#" className="p-2.5 rounded-full border border-black/5 hover:bg-[#C5A059] hover:text-white transition-all duration-500 text-black/60 hover:-translate-y-1 hover:scale-110 shadow-sm hover:shadow-md">
+                                <Link 
+                                    href="https://www.facebook.com/profile.php?id=61582378600165&locale=bn_IN#" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-2.5 rounded-full border border-black/5 hover:bg-[#C5A059] hover:text-white transition-all duration-500 text-black/60 hover:-translate-y-1 hover:scale-110 shadow-sm hover:shadow-md"
+                                >
                                     <Facebook size={16} />
                                 </Link>
                                 <Link 
@@ -85,9 +90,6 @@ export default function Footer() {
                                     className="p-2.5 rounded-full border border-black/5 hover:bg-[#C5A059] hover:text-white transition-all duration-500 text-black/60 hover:-translate-y-1 hover:scale-110 shadow-sm hover:shadow-md"
                                 >
                                     <Instagram size={16} />
-                                </Link>
-                                <Link href="#" className="p-2.5 rounded-full border border-black/5 hover:bg-[#C5A059] hover:text-white transition-all duration-500 text-black/60 hover:-translate-y-1 hover:scale-110 shadow-sm hover:shadow-md">
-                                    <Linkedin size={16} />
                                 </Link>
                             </div>
                         </div>
