@@ -31,6 +31,7 @@ const cinzel = Cinzel({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://omvikrealcon.com"),
   title: {
     default: "OMVIK | Custodians of Odisha's Heritage Real Estate",
     template: "%s | OMVIK"
